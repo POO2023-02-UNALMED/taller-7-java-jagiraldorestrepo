@@ -18,25 +18,53 @@ public class Fabula extends Escrito{
 		this.ensenanza = ensenanza;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String getInterpretacion() {
+		return interpretacion;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+
+	@Override
+	public int palabrasTotales(int palabrasPagina) {
+		return getPaginas()*1*palabrasPagina;
+	}
+
+	@Override
+	public String interpretacion() {
+		return interpretacion;
+	}
+
+	@Override
+	public String toString() {
+		return getOrigen()+"\n" +
+				getTitulo()+"\n" + 
+				getAutor()+"\n" + 
+				getPaginas()+"\n" + 
+				ensenanza;
+	}
 	
 	
 }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 
 
 
