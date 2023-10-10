@@ -38,4 +38,20 @@ public class Periodico extends Escrito{
 	public int palabrasTotales(int palabrasPagina) {
 		return getPaginas()*10*palabrasPagina;
 	}
+	
+	
+	@Override
+	public String interpretacion() {
+		return interpretacion;
+	}
+
+	@Override
+	public String toString() {
+		return getOrigen()+"\n" +
+				getTitulo()+"\n" + 
+				getAutor()+"\n" + 
+				getPaginas()+"\n" + 
+				fecha+"\n" +
+				primicia;
+	}
 }
